@@ -1,0 +1,84 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "libelle": "Boissons"
+    },
+    {
+      "id": 2,
+      "libelle": "Aliments"
+    },
+    {
+      "id": 3,
+      "libelle": "Boissons"
+    }
+  ],
+  "fournisseurs": [
+    {
+      "id": 1,
+      "prenom": "Jean",
+      "nom": "Dupont",
+      "email": "zeynab@gmail.com",
+      "telephone": "76667233",
+      "adresse": "dakar"
+    },
+    {
+      "id": 2,
+      "prenom": "Marie",
+      "nom": "Durand",
+      "email": "durand@gmail.com",
+      "telephone": "771234567",
+      "adresse": "dakar"
+    },
+    {
+      "id": 3,
+      "nom": "Fournisseur 1",
+      "prenom": "Fournisseur 1",
+      "email": "zeynabba@gmail.com",
+      "telephone": "774567890",
+      "adresse": "Dakar"
+    }
+  ],
+  "produits": [
+    {
+      "id": 1,
+      "libelle": "Coca-Cola",
+      "prixUnitaire": 150,
+      "qteStock": 100,
+      "categorieId": 1,
+      "fournisseurId": 1
+    },
+    {
+      "id": 2,
+      "libelle": "Pain",
+      "prixUnitaire": 50,
+      "qteStock": 200,
+      "categorieId": 2,
+      "fournisseurId": 2
+    },
+    {
+      "id": 3,
+      "libelle": "Fanta",
+      "prixUnitaire": 120,
+      "qteStock": 150,
+      "categorieId": 1,
+      "fournisseurId": 3
+    },
+    {
+      "id": 4,
+      "libelle": "Coca-Cola",
+      "prixUnitaire": 150,
+      "qteStock": 100,
+      "categorieId": 1,
+      "fournisseurId": 1
+    },
+    {
+      "id": 5,
+      "libelle": "Coca-Cola",
+      "prixUnitaire": 150,
+      "qteStock": 100,
+      "categorieId": 1,
+      "fournisseurId": 1
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+### 
+@baseUrl = http://localhost:3000
+@json = application/json
+
+
+### Route inconnue -> 404
+GET {{baseUrl}}/nope
+
+
+### Créer une catégorie
+POST {{baseUrl}}/categories
+Content-Type: {{json}}
+
+
+{
+  "libelle": "Boissons"
+}
+
+### supprimer une catégorie
+DELETE {{baseUrl}}/categories/1
+
+### recuperer une catégorie
+GET {{baseUrl}}/categories/2
+
+### recuperer toutes les catégories
+GET {{baseUrl}}/categories
+
+### recuperer tous les fournisseurs
+GET {{baseUrl}}/fournisseurs
+
+### creer un fournisseur
+POST {{baseUrl}}/fournisseurs
+Content-Type: {{json}}
+
+{
+  "nom": "Fournisseur 1",
+  "prenom": "Fournisseur 1",
+  "email": "zeynabba@gmail.com",
+  "telephone":"774567890",
+  "adresse": "Dakar"
+}
+
+
+### creer un produit
+POST {{baseUrl}}/produits
+Content-Type: {{json}}
+
+{
+    "libelle": "Coca-Cola",
+    "prixUnitaire": 150,
+    "qteStock": 100,
+    "categorieId": 1,
+    "fournisseurId": 1
+}
+
+### recuperer tous les produits
+GET {{baseUrl}}/produits
